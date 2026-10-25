@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a12">
+  <title>NENAFILMS — Cinema, delivered</title>
+  <meta name="description" content="Discover movies on NENAFILMS. UGX 1,000 per movie.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="NENAFILMS home"><span class="brand-mark">N</span><span>NENA<span class="brand-accent">FILMS</span><small>YOUR NEXT SCREEN</small></span></a>
+    <nav><a href="#catalog">Discover</a><a href="#how-it-works">How it works</a></nav>
+    <a class="pill-link" href="#catalog">Explore films <span>↗</span></a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> YOUR PRIVATE CINEMA</div>
+        <h1>Great stories.<br><em>One click away.</em></h1>
+        <p>Discover your next favourite film. Every movie is just <strong>UGX 1,000</strong> to unlock.</p>
+        <a class="primary-btn" href="#catalog">Explore the collection <span>↓</span></a>
+        <div class="hero-stats"><div><strong>01</strong><span>Pick a movie</span></div><div><strong>1,000</strong><span>UGX per movie</span></div><div><strong>HD</strong><span>Movie collection</span></div></div>
+      </div>
+      <div class="hero-art" aria-label="Cinema artwork">
+        <div class="poster poster-back"><span>THE UNKNOWN</span></div>
+        <div class="poster poster-main"><div class="poster-top">NENA ORIGINALS <span>2026</span></div><div class="poster-title">AFTER<br>THE<br><i>DARK</i></div><div class="poster-bottom">EVERY SECRET HAS A PRICE</div></div>
+        <div class="floating-note"><span class="note-icon">▶</span><div><strong>Your next favourite</strong><small>Starts here.</small></div></div>
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+      </div>
+    </section>
+    <section class="trust-strip"><span>✦ CURATED MOVIES</span><span>✦ SIMPLE PRICING</span><span>✦ BUILT FOR MOVIE LOVERS</span></section>
+    <section class="catalog section" id="catalog">
+      <div class="section-head"><div><div class="eyebrow">THE COLLECTION</div><h2>Find your <em>next film.</em></h2></div><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search movies..." aria-label="Search movies"></label></div>
+      <div class="filters" id="filters"><button class="filter active" data-genre="All">All movies</button><button class="filter" data-genre="Action">Action</button><button class="filter" data-genre="Crime">Crime</button><button class="filter" data-genre="Drama">Drama</button><button class="filter" data-genre="Romance">Romance</button></div>
+      <div class="movie-grid" id="movieGrid"></div>
+      <p class="catalog-note">New releases appear here when the site owner updates the movie catalogue.</p>
+    </section>
+    <section class="how section" id="how-it-works">
+      <div class="eyebrow">SIMPLE BY DESIGN</div><h2>Three steps to <em>movie night.</em></h2>
+      <div class="steps"><article><span>01</span><h3>Choose a film</h3><p>Browse the catalogue and open the movie you want.</p></article><article><span>02</span><h3>Send UGX 1,000</h3><p>Pay using the mobile-money details shown and keep your transaction ID.</p></article><article><span>03</span><h3>Request access</h3><p>Send your movie title and transaction ID to the site owner for payment verification.</p></article></div>
+      <div class="payment-panel"><div><div class="eyebrow">PAYMENT DETAILS</div><h3>One movie. One payment.</h3><p>Payment recipient shown by the site owner</p></div><div class="pay-details"><span>Mobile Money</span><strong>0763827011</strong><b>NEXUS MOVIE</b><button id="copyNumber" class="secondary-btn">Copy number</button></div></div>
+      <p class="notice"><strong>Important:</strong> This starter website does not verify mobile-money payments automatically. Never share your PIN. Confirm the recipient name before sending money. Access must only be granted after the owner verifies the transaction.</p>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">N</span><span>NENA<span class="brand-accent">FILMS</span><small>YOUR NEXT SCREEN</small></span></a><span>© <span id="year"></span> NENAFILMS. All rights reserved.</span><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">Back to top ↑</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="movies.js"></script><script src="app.js"></script>
+</body>
+</html>
